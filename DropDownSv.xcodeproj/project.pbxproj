@@ -10,6 +10,7 @@
 		9521FF7F238CD83300C5EE37 /* DropDownSv.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9521FF75238CD83300C5EE37 /* DropDownSv.framework */; };
 		9521FF84238CD83300C5EE37 /* DropDownSvTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9521FF83238CD83300C5EE37 /* DropDownSvTests.swift */; };
 		9521FF86238CD83300C5EE37 /* DropDownSv.h in Headers */ = {isa = PBXBuildFile; fileRef = 9521FF78238CD83300C5EE37 /* DropDownSv.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9521FF91238CD87A00C5EE37 /* DropDownSv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9521FF90238CD87A00C5EE37 /* DropDownSv.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		9521FF7E238CD83300C5EE37 /* DropDownSvTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DropDownSvTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9521FF83238CD83300C5EE37 /* DropDownSvTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownSvTests.swift; sourceTree = "<group>"; };
 		9521FF85238CD83300C5EE37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9521FF90238CD87A00C5EE37 /* DropDownSv.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownSv.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 		9521FF6B238CD83300C5EE37 = {
 			isa = PBXGroup;
 			children = (
+				9521FF8F238CD85900C5EE37 /* Source */,
 				9521FF77238CD83300C5EE37 /* DropDownSv */,
 				9521FF82238CD83300C5EE37 /* DropDownSvTests */,
 				9521FF76238CD83300C5EE37 /* Products */,
@@ -84,6 +87,14 @@
 				9521FF85238CD83300C5EE37 /* Info.plist */,
 			);
 			path = DropDownSvTests;
+			sourceTree = "<group>";
+		};
+		9521FF8F238CD85900C5EE37 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				9521FF90238CD87A00C5EE37 /* DropDownSv.swift */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +159,7 @@
 				TargetAttributes = {
 					9521FF74238CD83300C5EE37 = {
 						CreatedOnToolsVersion = 11.1;
+						LastSwiftMigration = 1110;
 					};
 					9521FF7D238CD83300C5EE37 = {
 						CreatedOnToolsVersion = 11.1;
@@ -195,6 +207,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9521FF91238CD87A00C5EE37 /* DropDownSv.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +353,7 @@
 		9521FF8A238CD83300C5EE37 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = BE8PEU5GTE;
@@ -356,6 +370,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.softsolutions.in.DropDownSv;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -364,6 +379,7 @@
 		9521FF8B238CD83300C5EE37 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = BE8PEU5GTE;
@@ -388,6 +404,7 @@
 		9521FF8D238CD83300C5EE37 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BE8PEU5GTE;
 				INFOPLIST_FILE = DropDownSvTests/Info.plist;
@@ -406,6 +423,7 @@
 		9521FF8E238CD83300C5EE37 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BE8PEU5GTE;
 				INFOPLIST_FILE = DropDownSvTests/Info.plist;
