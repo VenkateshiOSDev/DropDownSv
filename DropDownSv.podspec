@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "DropDownSv"
-  spec.version      = "0.0.1"
+  spec.version      = "1.0.2"
   spec.summary      = "A CocoaPods library written in Swift"
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -27,7 +27,7 @@ Pod::Spec.new do |spec|
                     This CocoaPods library helps you to Create DropDown.
                    DESC
 
-  spec.homepage     = "http://EXAMPLE/DropDownSv"
+  spec.homepage     = "https://github.com/abhiroyal/DropDownSv"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -79,7 +79,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "http://EXAMPLE/DropDownSv.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/abhiroyal/DropDownSv.git", :tag => "#{spec.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -88,9 +88,9 @@ Pod::Spec.new do |spec|
   #  giving a folder will include any swift, h, m, mm, c & cpp files.
   #  For header files it will include any header in the folder.
   #  Not including the public_header_files will make all headers public.
-  #
-
-  spec.source_files  = "Classes", "Classes/**/*.{h,m}"
+  
+  spec.source_files  = "DropDownSv/**/*.{h,m,swift}"
+  #spec.source_files  = 'Classes/*.{h,m,swift}'
   spec.exclude_files = "Classes/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
